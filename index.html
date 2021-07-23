@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <div>
+        <span>
+            Array Size:
+           <input id="arr_sz" type="range"  min=10 max=200 step=1 value=10>
+        </span>
+    </div>
+        <div class="header-right">
+          <p class="heading">Sorting Visualiser</p>
+
+        <div class="algobutton">
+            <button id="new_array">New Array</button>
+            <button onclick="Bubble()">Bubble</button>
+            <button onclick="Selection()">Selection</button>
+            <button onclick="Insertion()">Insertion</button>
+            <button onclick="Merge()">Merge</button>
+            <button onclick="Quick()">Quick</button>
+        </div>
+        </div>
+    </nav>
+
+    <div height="100%">
+
+        <div id="Info_Cont1" class="leftpane">
+            <p>This is First Container</p>
+        </div>
+
+        <div id="bars" class="middlepane">
+
+        </div>
+
+        <div id="Info_Cont2"class="rightpane">
+            <p>This is Last Container</p>
+
+        </div>
+
+    </div>
+        <footer>
+
+        </footer>
+
+    <script src="bar.js"></script>
+    <script src="swap.js"></script>
+    <script src="bubble.js"></script>
+    <script src="selection.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge_sort.js"></script>
+    <script src="quick_sort.js"></script>
+</body>
+</html>
